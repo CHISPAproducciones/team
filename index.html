@@ -1,253 +1,211 @@
 <!DOCTYPE html>
-<html>
-	<head>
-<title>Chispa Producciones</title>
+<html lang="en">
+<title> CHISPA PRODUCCIONES </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="assets/css/style1.css">	
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.alert.css" >
 
-		<link rel="icon" 
+<link rel="icon" 
 		  type="image/png" 
-		  href="img-20220210T160817Z-001/logo.png" 
+		  href="img/logo.png" 
 		  sizes="64x64" >
-	</head>	
-	
-	
-	<body id="myPage">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1, h2{font-weight:bolder;}
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Cerrar
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 style="margin:8px 25px;font-weight:bold;">PROYECTOS INDIVIDUALES</h4>
-  <p style="font-size:15px;margin:6px 32px;">
-  <a href="#" class="w3-bar-item w3-button" target="_blank" >PORTAFOLIO EMANUELL PARRA</a>
-  <a href="#" class="w3-bar-item w3-button" target="_blank" >PORTAFOLIO DANA MONTES</a>
-  <a href="#" class="w3-bar-item w3-button" target="_blank" >PORTAFOLIO JUAN PÉREZ</a>
-  </p>
-</nav>
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.w3-button, .w3-top{background:gold}
+.fa-share, .fa-gears, .fa-panorama, {font-size:200px}
+.fondo{width:100%;padding: 2.8em 0;}
+
+</style>
+<body>
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right">&nbsp;</i><img src="img/logo.png" width="20" height="20" style="color: gold;" alt=""/></a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Equipo</a>
-   
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Proyectos&nbsp;</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Precios</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contacto</a>
-    
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
- </div>
+  <div class="w3-bar w3-gold w3-card w3-left-align w3-large w3-padding-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-gold" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white "><img style="width: 30px; " src="img/logo.png" alt=""/></a>
+    <a href="#quienes" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">¿Quiénes somos?</a>
+    <a href="equipo.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Equipo</a>
+    <a href="#nuestrotrabajo" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Nuestro trabajo</a>
+    <a href="#servicios" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Servicios</a>
+    <a href="#contacto" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacto</a>
+  </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">EQUIPO</a>
-    <a href="#work" class="w3-bar-item w3-button">PROYECTOS</a>
-    <a href="#pricing" class="w3-bar-item w3-button">PRECIOS</a>
-    <a href="#contact" class="w3-bar-item w3-button">CONTACTO</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#quienes" class="w3-bar-item w3-button w3-padding-large w3-hover-white">¿Quiénes somos? </a>
+    <a href="equipo.htm" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Equipo</a>
+    <a href="#nuestrotrabajo" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Nuestro trabajo</a>
+    <a href="#servicios" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Servicios</a>
+    <a href="#contacto" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Contacto</a>
+  </div>
+</div>
+
+<!-- Header -->
+<img style="z-index:-5;" class="fondo" src="img/fondo.png" alt=""/>
+<!--<div class="w3-center" style=" top:-10px; padding:0 ;z-index:5;"> <button class=" w3-button w3-black w3-padding-large w3-large w3-center " >¿Qué hacemos?</button></div>-->
+
+	<div id="alert-image-wrap"></div>
+
+<div id="alert-text-wrap">
+
+  <div id="alert-text">
+    
+    <div id="alet-title-initial">
+      <span class="text1">Chispa</span>
+      <span class="text2">Producciones</span>
+      <span class="star1"><img src="https://i.imgur.com/X4nkhpc.png" alt=""/></span>
+      <span class="star2"><img src="https://i.imgur.com/WovPqWB.png" alt=""/></span>
+    </div>
+    
+    <div id="alet-title-end">
+      <div class="alert-title-message">
+        <span class="text3">Productora</span>
+      </div>
+      <span class="star3">
+        <img src="https://i.imgur.com/MAPlqNn.png" class="star3" alt=""/>
+      </span>
+        <div class="alert-message">Multimedia</div>
+        <div class="alert-user-message">Navega nuestra página y contáctanos para realizar tus producciones!!</div>
+      </div>
     
   </div>
+  
 </div>
-
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="img/fondo.png" alt="" style="width:100%;min-height:350px;max-height:px;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-   
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">CHISPA PRODUCCIONES&nbsp;</button> 
-  </div>
-</div>
-
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h2>¿QUIÉNES SOMOS?</h2>
-      <h5>Somos una empresa de diseño y producción de soluciones audiovisuales, desarrolladas conforme a las necesidades de nuestros clientes de la capital colombiana, a los cuales brindamos productos multimedia fabricados por personal altamente calificado que garantiza una excelente calidad</h5>
-    </header>
-    <div class="w3-container">
-      <h3>NOS PROYECTAMOS PARA... <h3>
-      <h6>Ser líderes en producción y diseño multimedia que buscan ayudar a instituciones educativas de todos los niveles para lograr el máximo reconocimiento con cada producto que entregamos.<h6>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>¡Trabajamos para ustedes!  <i class="fa-solid fa-face-smile-wink"></i>  </p>
-    </footer>
-  </div>
-</div>
-
-<!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>EQUIPO DE TRABAJO &nbsp;</h2>
-<p>Conoce quién elabora los trabajos </p>
-
-<center><div class="w3-row"><br>
-
-<div class="w3-quarter">
-  <img src="img/DANA.jpeg" alt="Boss" style="height: 20em;" class="w3-circle w3-hover-opacity">
-  <h3>DANA MONTES</h3>
-  <p>Productora y Desarrolladora web&nbsp; &nbsp;</p>
-</div>
-
-<div class="w3-quarter">
-  <img  src="img/jUAN.jpg" alt="Boss" style="height: 20em;" class="w3-circle w3-hover-opacity">
-  <h3>JUAN DAVID PEREZ</h3>
-  <p>Posproductor<br>
-Fotógrafo<br>
-Ilustrador</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="img/yo.jpg" alt="Boss" style="height: 20em;" class="w3-circle w3-hover-opacity">
-  <h3>EMANUELL PARRA</h3>
-  <p>Guionista<br>
-Productor&nbsp;</p>
-</div>
-
-</div></center>
 	
-</div>
+<header class="w3-container w3-gold w3-center">
+      <p class="w3-xxlarge">Conócenos</p>
+    <video src="" alt=""/>
+   
+</header>
 
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
-<div class="w3-quarter">
-<h2>Nuestro trabajo</h2>
-<p>“Somos una empresa de diseño y producción de soluciones audiovisuales, desarrolladas conforme a las necesidades de nuestros clientes de la capital colombiana, a los cuales brindamos productos multimedia fabricados por personal altamente calificado que garantiza una excelente calidad.”</p>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/ropa.png" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>Merchandising</h3>
-  <h4>Playeras</h4>
-  <p>Gorros</p>
-  <p>Pegatinas&nbsp;</p>
-  <p>Material corporativos</p>
-  <p>Empaques</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/imagen.png" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Empresas&nbsp;</h3>
-  <h4>Video corporativo&nbsp; &nbsp;</h4>
-  <p>Marketing educativo</p>
-  <p>Fotografia de eventos&nbsp;</p>
-  <p>Ilustraciones&nbsp;</p>
-  <p>Diseño web&nbsp;</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/foto.png" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>&nbsp;Proucciones
-	  </h3>
-  <h4>Animaciones 2D</h4>
-  <p>Diseño de personajes</p>
-  <p>Logos</p>
-  <p>Posters</p>
-  <p>Manual de marca</p>
-  <p>Piezas gráficas</p>
-  </div>
-  </div>
-</div>
-
-</div>
-
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
-
-<!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>Precios</h2>
-    <p>Elige un precio de acuerdo a tus necesidades</p>
-    <br>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Basic</p>
-        </li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Dominios</li>
-        <li class="w3-padding-16"><b>Soporte</b></li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 100.000</h2>
-          <span class="w3-opacity">Desde</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> ¡Lo quiero! </button>
-        </li>
-      </ul>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background:#F4C629; ">
+  <div id="quienes" class="w3-content">
+      <h1 >¿Quiénes somos?</h1>
+    <div class="w3-twothird">
+      <h5 class="w3-padding-32">Somos una empresa de diseño y producción de soluciones audiovisuales, desarrolladas conforme a las necesidades de nuestros clientes de la capital colombiana, a los cuales brindamos productos multimedia fabricados por personal altamente calificado que garantiza una excelente calidad</h5>
+     <h3>NOS PROYECTAMOS PARA...</h3>
+      <p class="w3-text-black">
+Ser líderes en producción y diseño multimedia que buscan ayudar a instituciones educativas de todos los niveles para lograr el máximo reconocimiento con cada producto que entregamos.</p>
     </div>
 
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">Pro</p>
-        </li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Dominios</li>
-        <li class="w3-padding-16"><b>Soporte</b></li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 250.000</h2>
-          <span class="w3-opacity">&nbsp;Desde</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> ¡Lo quiero!</button>
-        </li>
-      </ul>
+    <div class="w3-third w3-center">
+     <iframe src="https://giphy.com/embed/XipyTa3itqibnEoIx1" width="480" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Premium</p>
-        </li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Dominios</li>
-        <li class="w3-padding-16"><b>Soporte</b></li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 500.000</h2>
-          <span class="w3-opacity">Desde&nbsp;</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> ¡Lo quiero!</button>
-        </li>
-      </ul>
-    </div>
+  </div>
 </div>
 
-<!-- Contact Container -->
+
+
+
+<!-- EQUIPO -->
+
+<img style="width: 60%; margin: 5% 20%; background: #F4C629;" src="img/GIF-multimedia.gif" alt=""/>
+
+
+
+<!-- Second Grid - trabajos -->
+<div id="nuestrotrabajo" class="w3-row-padding w3-light-black w3-padding-64 w3-container">
+  <div class="w3-content">
+   
+    <div class="w3-twothird">
+      <h1>TRABAJOS POR CHISPA PRODUCCIONES</h1>
+      
+		
+		<div class="grid-trabajos">
+			  <div class="grid-item"><img width="200%" src="img/Poster abril.png" alt="póster"></div>
+			  <div class="grid-item"><img width="200%" src="img/ComunicaciÓn corporativa.png" alt="póster"></div>
+			  <div class="grid-item"><img width="100%" src="img/Poster abril.png" alt="póster"></div>  
+			  <div class="grid-item">4</div>
+			  <div class="grid-item">5</div>
+			  <div class="grid-item">6</div>  
+			  <div class="grid-item">7</div>
+			  <div class="grid-item">8</div>
+			  <div class="grid-item">9</div>  
+		</div>
+		
+		
+    </div>
+  </div>
+</div>
+
+
+<!-- Servicios -->
+<div id="servicios"></div>
+<div class="w3-row-padding w3-padding-64 w3-container " style="background: #F4C629;">
+  <div  class="w3-content">
+      <h1 >¿Qué ofrecemos?</h1>
+    <div class="w3-twothird">
+      
+     
+      <h4 class="w3-text-black ">
+Producción de contenidos multimedia que favorezcan el establecimiento de una mejor comunicación con el público objetivo a través de plataformas digitales.
+</h4>
+<h4 class="w3-padding-32">
+        Chispa Producciones se especializa en Marketing educativo y comunicación corporativa a través de la creación de contenido publicitario y audiovisual.</h4>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img style="width:70%;padding: 20px;" src="img/question.svg" alt="" />
+    </div>
+  </div>
+	</div>
+	
+	<div style="text-align: center; padding: 20px 0;">
+		<h1 style="color:royalblue; text-shadow: -4px 2px 30px gold ; ">CONCEPTOS</h1><br>
+  	<div class="wrapper">
+			<div class="buttonWrapper">
+			  <button class="tab-button active" style="border-top-left-radius: 10px;" data-id="home">Contenido multimedia</button>
+			  <button class="tab-button" data-id="about">Marketing educativo</button>
+			  <button class="tab-button" style="border-top-right-radius: 10px;" data-id="contact">Comunicación corporativa</button>
+			</div>
+   	 	<div class="contentWrapper">
+		  <p class="content active" id="home">
+			El contenido multimedia son piezas informativas visuales que reúnen distintos medios de expresión y presentación de la información, como texto, imágenes, animaciones, video o audios. 
+			  <br><br>
+			Los diferentes formatos multimedia digital buscan mejorar la experiencia del usuario y comunicar un mensaje de una forma gráfica, que genere mayor impacto en el recuerdo e interpretación del mensaje, por parte del público que lo recibe.
+		  </p>
+		  <p class="content " id="about">
+			El marketing educativo desarrolla estrategias de comunicación a través de contenidos digitales e impulsa la innovación en colegios, pues permite buscar soluciones creativas a momentos retadores, para darse a conocer y responder a los nuevos cambios sociales y a las demandas de las familias, lo que se traducirá en nuevos estudiantes a corto y mediano plazo, y en el posicionamiento que es lo que se espera dentro del sector, a largo plazo. 
+
+		  </p>
+		  <p class="content" id="contact">
+			Es el envío de mensajes por parte de una organización a sus públicos a través de una serie de canales. Sirve para expresar los valores e ideas principales de la compañía y toda la información relevante para cada interlocutor, que pueden ser el público objetivo, los proveedores, los colaboradores, etc.
+			Desarrollar una buena estrategia es apostar por las funciones que cumple ésta dentro de la empresa.
+
+		  </p>
+   		 </div>
+ 	 </div>
+</div>
+
+
+
+
+<!-- banner final -->
+<div id="contacto" class="w3-container w3-black w3-center w3-padding-64">
+
+    <h1 class="w3-margin w3-xlarge"> 💫💫 CADA HISTORIA TIENE SU CHISPA 💫💫 </h1>
+</div>
+
 <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
   <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contactanos</span></div>
-      <h3>Dirección</h3>
-      <p>Edicifio </p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Suba, Bogota</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +57 00000000</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  chispa@producciones.com</p>
+    <div class=" w3-padding-64 w3-col m4 w3-center">
+    <div class="w3-padding-32"><span class="w3-xlarge w3-border-yellow w3-bottombar">Contáctanos</span></div>
+      <p><i class="fa fa-phone w3-text-orange w3-xlarge"></i>  +57 317 275 19 69 </p>
+      <p><i class="fa fa-phone w3-text-orange w3-xlarge"></i>  +57 314 336 94 58 </p>
+      <p><i class="fa fa-phone w3-text-orange w3-xlarge"></i>  +57 350 788 56 32 </p>
+      <p><i class="fa fa-envelope-o w3-text-orange w3-xlarge"></i>  chispa@producciones.com</p>
     </div>
-    <div class="w3-col m7">
+    <div class="w3-col m7  w3-padding-64">
       <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
       <div class="w3-section">      
         <label>Nombre</label>
@@ -268,51 +226,32 @@ Productor&nbsp;</p>
     </div>
   </div>
 </div>
+	
+	<div style="padding-bottom: 200px;position:relative;"><iframe src="https://giphy.com/embed/CoHSFooXRJAAzsTHch" width="1250px" height="200px" style="position:absolute" frameBorder="0" class="giphy-embed"></iframe></div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Síguenos en nuestras redes sociales</h4>
-  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/Chispa-Producciones-101815379104440" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="https://twitter.com/" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus" target="_blank"></i></a>
-  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/chispa.productora/?hl=es-la" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/in/chispa-producciones-10099a231/" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-  <p><a href="" target="_blank">Patrocinado por CHISPA&nbsp;</a></p>
+<footer class="w3-container w3-padding-32 w3-center " style="background: #F4C629 ;" >  
+  <div class="w3-xxlarge w3-padding-32">
+    <h2>Encuentra más contenido nuestras redes sociales</h2>
+    <p class="w3-text-orange w3-xlarge" style="background: white;"><b>Síguenos</b></p>
+    <a href="" target="_blank" ><i class="fa fa-facebook-official w3-hover-yellow"></i></a> &nbsp;&nbsp;
+    <a href="" target="_blank" ><i class="fa fa-instagram w3-hover-yellow"></i> </a> &NonBreakingSpace;&nbsp;
+    <a href="" target="_blank" ><i class="fa fa-twitter w3-hover-yellow"></i> </a> &nbsp;&nbsp;
+    <a href="" target="_blank" ><i class="fa fa-linkedin w3-hover-yellow"></i> </a> &nbsp;&nbsp;
+ </div>
+<br>
+ <div class="w3-container  w3-center w3-padding-8">
 
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
+    <h1 class=" w3-text-black w3-medium w3-padding-32" > CHISPA producciones </h1> <i  class=" w3-text-black fa fa-copyright w3-padding-8 "></i> Copyright 
+</div>
 </footer>
+	
+	
 
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+<script src="assets/JS/javascript.demo1.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 </body>
 </html>

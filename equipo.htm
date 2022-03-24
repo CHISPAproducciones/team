@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> CHISPA PRODUCCIONES </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="icon" 
+		  type="image/png" 
+		  href="img-20220210T160817Z-001/logo.png" 
+		  sizes="64x64" >
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+h1, h2{font-weight:bolder;}
+
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.w3-button, .w3-top{background:gold}
+.fa-share, .fa-gears, .fa-panorama, {font-size:200px}
+.fondo{width:100%;padding: 2.8em 0;}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin: 0;
+  padding: 0;
+  	
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 70%;
+    display: block;
+	  
+  }
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin:50px 20px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: mediumpurple;
+  font-weight: 900;	
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 6.5px;
+  color: white;
+  background-color:black ;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: gold;
+}
+
+.button a {
+	text-decoration:none;
+    color:white;
+}
+
+	#equipo-title{
+		
+		animation: equipo-title 5.6s infinite;}
+	
+	@keyframes equipo-title {
+  50% {text-shadow: 10px 20px 30px gold;}
+	}
+	
+	
+a:hover{cursor:pointer; }
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-gold w3-card w3-left-align w3-large w3-padding-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-gold" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white "><img style="width: 30px; " src="img/logo.png" alt=""/></a>
+    <a href="index.html#quienes" class="w3-bar-item  w3-button w3-hide-small w3-padding-large w3-hover-white">¿Quiénes somos?</a>
+    <a href="equipo.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Equipo</a>
+    <a href="index.html#nuestrotrabajo" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Nuestro trabajo</a>
+    <a href="index.html#servicios" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Servicios</a>
+    <a href="index.html#contacto" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacto</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html#quienes" class="w3-bar-item w3-button w3-padding-large w3-hover-white">¿Quiénes somos? </a>
+    <a href="equipo.htm" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Equipo</a>
+    <a href="index.html#nuestrotrabajo" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Nuestro trabajo</a>
+    <a href="index.html#servicios" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Servicios</a>
+    <a href="index.html#contacto" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Contacto</a>
+  </div>
+</div>
+
+
+<div style="padding: 15% 12% 5%;">
+	<img style="float: right;height: 140px; margin-right: 70px; margin-top: -20px; " src="img/puzzle.svg" alt=""/>
+	<h1 id="equipo-title" style="color:darkgoldenrod; text-shadow: 0.95px 2px gold">EQUIPO DE TRABAJO</h1><br>
+	<h4>Productores multimedia</h4>
+	
+	</div>
+	
+	<br>
+<!---cards--->
+	<div class="row" style="padding: 5% 10%">
+  <div class="column">
+    <div class="card">
+      <img src="img/DANA.jpeg" alt="Dana " style="width:100%">
+      <div class="container">
+        <h2>Dana Montes</h2>
+        <p class="title">Productora y <br> desarrolladora web<br><br></p>
+        
+        
+        <p><button class="button"> <a href="https://www.google.com" target
+        ="_blank">Ver portafolio</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/jUAN.jpg" alt="Juan" style="width:100%">
+     <div class="container">
+        <h2>Juan Pérez</h2>
+        <p class="title">Ilustrador, editor y<br> fotógrafo<br><br></p>
+      <p><button class="button"> <a href="https://www.google.com" target="_blank">Ver portafolio</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img/yo.jpg" alt="" style="width:100%">
+      <div class="container">
+        <h2>Emanuell Parra</h2>
+        <p class="title">Productor y guionista<br><br><br></p>
+        
+       <p><button class="button"> <a href="https://www.google.com" target
+        ="_blank">Ver portafolio</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+	
+
+
+<br>
+
+
+
+
+
+
+<div id="contacto" class="w3-container w3-black w3-center w3-padding-64">
+
+    <h1 class="w3-margin w3-xlarge"> 💫💫 CADA HISTORIA TIENE SU CHISPA 💫💫 </h1>
+</div>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
