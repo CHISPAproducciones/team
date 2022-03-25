@@ -143,9 +143,7 @@
 		width: 500px;
 	}
 	
-	
-	
-	
+		
 	
 }
 
@@ -153,19 +151,18 @@
 
 .grid-trabajos {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   padding: 0px;	
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  font-size: 30px;
+  padding: 20px 0;
   margin: auto;
   text-align: center;
 }
 
 .grid-item img{
-	width: 480px;
+	width: 450px;
 	
 }
 
