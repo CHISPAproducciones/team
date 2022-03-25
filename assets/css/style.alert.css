@@ -38,7 +38,7 @@
     opacity: 0;
 }
 #alert-text {
-    padding: 5px 0;
+    padding: 0;
     text-shadow: none;
 }
 #alert-message, #alert-user-message {
@@ -79,7 +79,7 @@
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-  padding: 20px;
+  padding: 0px;
 }
 
 #alert-text > div {
@@ -94,7 +94,7 @@
   position: relative;
   z-index: 9999 !important;
   top: 0;
-  line-height: 16px;
+  line-height: 0px;
   left: 0;
   justify-content: center !important;
 	align-content: center !important;
